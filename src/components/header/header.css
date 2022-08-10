@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
 }
 
 ul {
@@ -11,9 +11,16 @@ li {
     padding: 10px;
     list-style-type: none;
     border-style: solid;
+    border-radius: 5px;
+    border-width: .5px;
     margin: 10px;
+
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+a:hover {
+    background-color: rgb(154, 122, 122);
 }

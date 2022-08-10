@@ -5,8 +5,7 @@ const Header = () => {
         <>
             <nav className='navbar'>
                 <ul>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href='/'>Login</a></li>
+                    <li><a href="/">Home</a></li>
                 </ul>
             </nav>
         </>

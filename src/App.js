@@ -1,16 +1,24 @@
+import { Toaster } from "react-hot-toast";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
-import Login from "./components/login/login";
+import Dashboard from "./components/dashboard/dashboard";
 function App() {
   return (
     <>
+      <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
       <Header />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Login />} />
-      </Routes>
+      <div className="app-body">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </div>
+      
     </>
   );
 }
